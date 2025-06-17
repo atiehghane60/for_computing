@@ -1,0 +1,94 @@
+.accordion-container {
+    width: 85%;
+    margin: auto;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 4rem auto
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #4c4c4c;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: #333333;
+  }
+  
+  .accordion-content {
+    padding: 16px;
+    background-color: #1e1e1e;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .accordion-content p {
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
+  .publication-link {
+    color: #FFC628;
+    text-decoration: none;
+  }
+  
+  .publication-link:hover {
+    text-decoration: underline;
+  }
+  
+  .chevron {
+    transition: transform 0.3s ease;
+  }
+  
+  .chevron.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .fadeOut {
+    animation-name: fadeOut;
+  }
+  a img{
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+  a{
+    display: flex;
+    align-items: center;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+  }
+  

@@ -1,0 +1,153 @@
+.navbar {
+  background-color: #1a1a1a;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: rotate(90deg);
+}
+
+/* Mobile nav links hidden by default */
+.nav-links {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+  pointer-events: none;
+}
+
+/* Mobile nav links open */
+.nav-links.open {
+  max-height: 300px; /* max height enough to show full list */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  padding: 16px 0;
+}
+
+.nav-links li {
+  padding: 10px 0;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a:hover {
+  color: #FFC628;
+  transform: scale(1.05);
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.logo{
+  width: 50px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background: none;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .nav-links.open {
+    padding: 0;
+  }
+  .navbar{
+    padding: 0px 20px;
+  }
+
+}
+@media(min-width: 790px){
+    .logo{
+    width: 85px;
+  }
+}
+/* Large screens - laptops and desktops */
+@media (min-width: 1024px) {
+
+
+  .nav-links li {
+    font-size: 1.1rem;
+    padding: 0 14px;
+  }
+
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra-large screens - wide monitors */
+@media (min-width: 1440px) {
+
+  .navbar {
+    padding: 0 80px;
+  }
+
+  .nav-links li {
+    font-size: 1.2rem;
+  }
+}

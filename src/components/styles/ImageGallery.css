@@ -1,0 +1,47 @@
+.image-gallery {
+    width: 250px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+.slick-prev:before, .slick-next:before {
+  font-size: 25px !important; 
+}
+.slick-prev {
+  left: -30px !important;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
+  
+/* Large screens - laptops and desktops */
+@media (min-width: 1024px) {
+  
+  .image-gallery {
+    width: 400px;
+  }
+
+  .image-gallery img {
+    height: 350px;
+  }
+
+  
+}
+
+/* Extra-large screens - wide monitors */
+@media (min-width: 1440px) {
+  
+
+  .image-gallery {
+    width: 500px;
+  }
+
+  .image-gallery img {
+    height: 400px;
+  }
+
+}

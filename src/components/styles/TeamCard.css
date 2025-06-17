@@ -1,0 +1,152 @@
+.team-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    margin: 2rem auto;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.team-card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+.flip-icon{
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    top: 20px;
+    right: 20px;
+}
+
+.card-front,
+.card-back {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    background-color: #2E2E2E;
+    color: white;
+    padding: 1rem;
+}
+
+.card-front {
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+}
+
+.card-back {
+    justify-content: flex-start;
+    transform: rotateY(180deg);
+}
+
+.card-image {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    background: #cfd1d3;
+}
+
+.card-divider {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-color: #FFC857;
+    margin: 1rem 0;
+}
+
+.team-card-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.2rem 0;
+    color: white;
+    text-align: center;
+}
+
+.team-card-position {
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    margin: 0.3rem;
+}
+
+.team-card-bio {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: justify;
+}
+
+.contact-info {
+    margin-top: auto;
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.email-link, .website-link {
+    display: block;
+    color: #D1D1D1;
+    text-decoration: none;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.email-link:hover, .website-link:hover {
+    color: #FFC857;
+}
+
+@media (max-width: 413px) {
+    .team-card {
+        width: 240px;
+        height: 320px;
+    }
+
+    .flip-icon {
+        width: 30px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .card-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .team-card-name {
+        font-size: 1rem;
+    }
+
+    .team-card-position {
+        font-size: 0.85rem;
+    }
+
+    .team-card-bio {
+        font-size: 0.75rem;
+    }
+
+    .contact-info {
+        font-size: 0.75rem;
+    }
+
+    .email-link, .website-link {
+        font-size: 0.75rem;
+    }
+}
+

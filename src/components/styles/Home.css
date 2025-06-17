@@ -1,0 +1,64 @@
+.home {
+  text-align: center;
+  padding: 4rem 1rem;
+  /* background: url('/images/background.jpg') center/cover no-repeat; */
+  color: white;
+}
+
+.home h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.home h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.home p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Large screens - laptops and desktops */
+@media (min-width: 1024px) {
+  .home {
+    padding: 6rem 4rem;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home h2 {
+    font-size: 1.6rem;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.8;
+  }
+
+}
+
+/* Extra-large screens - wide monitors */
+@media (min-width: 1440px) {
+  .home {
+    padding: 8rem 6rem;
+  }
+
+  .home h1 {
+    font-size: 4rem;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+
+}

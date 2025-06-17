@@ -1,0 +1,17 @@
+.footer-wrapper{
+    text-align: center;
+    margin-top: 1rem;
+}
+.icons{
+    width: 18px;
+    margin-right: 5px;
+}
+.footerParagraph{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .footer-wrapper{
+        margin-top: 6rem;
+    }
+}
