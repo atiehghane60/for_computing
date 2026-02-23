@@ -11,14 +11,7 @@ const teamMembers = [
         email: 'pouriya.miri98@gmail.com',
         website: 'https://pouriyamiri.github.io/'
     },
-    {
-        image: '/images/team_members/andrej_grebenc.png',
-        name: 'Andrej Grebenc',
-        role: 'Researcher',
-        bio: 'Integer ut efficitur nisi, in tristique sem...',
-        email: 'john@example.com',
-        website: 'https://johndoe.com'
-    },
+
     {
         image: '/images/team_members/mitja_potocar.png',
         name: 'Mitja Potočar',
@@ -35,14 +28,7 @@ const teamMembers = [
         email: 'boblee@example.com',
         website: 'https://bobleedev.com'
     },
-    {
-        image: '',
-        name: 'Vanja Mileski',
-        role: 'Researcher',
-        bio: 'Integer ut efficitur nisi, in tristique sem...',
-        email: 'john@example.com',
-        website: 'https://johndoe.com'
-    },
+
     {
         image: '',
         name: 'Luka Maček',
@@ -67,30 +53,7 @@ const teamMembers = [
         email: 'john@example.com',
         website: 'https://johndoe.com'
     },
-    {
-        image: '',
-        name: 'Gaber Polajnar',
-        role: 'Researcher',
-        bio: 'Integer ut efficitur nisi, in tristique sem...',
-        email: 'john@example.com',
-        website: 'https://johndoe.com'
-    },
-    {
-        image: '',
-        name: 'Teodora Mishevska Kochovski',
-        role: 'Researcher',
-        bio: 'Integer ut efficitur nisi, in tristique sem...',
-        email: 'john@example.com',
-        website: 'https://johndoe.com'
-    },
-    {
-        image: '/images/team_members/iztok_skof.png',
-        name: 'Iztok Škof',
-        role: 'Researcher',
-        bio: 'Integer ut efficitur nisi, in tristique sem...',
-        email: 'john@example.com',
-        website: 'https://johndoe.com'
-    },
+
     {
         image: '/images/team_members/harun_demir.png',
         name: 'Harun Demir',
@@ -99,14 +62,7 @@ const teamMembers = [
         email: 'john@example.com',
         website: 'https://johndoe.com'
     },
-    {
-        image: '',
-        name: 'Jernej Trnkoczy',
-        role: 'Researcher',
-        bio: 'Integer ut efficitur nisi, in tristique sem...',
-        email: 'john@example.com',
-        website: 'https://johndoe.com'
-    },
+
     {
         image: '/images/team_members/petar_kochovski.png',
         name: 'Petar Kochovski',
