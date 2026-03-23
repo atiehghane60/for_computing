@@ -22,7 +22,7 @@
     transform: rotateY(180deg);
 }
 .flip-icon{
-    display: inline-block;
+    display: none;
     position: absolute;
     width: 40px;
     top: 20px;
